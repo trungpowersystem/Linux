@@ -1,0 +1,12 @@
+1. Export the pin:
+	echo 31 > /sys/class/gpio/export
+2. Set the pin direction (input or output).
+	echo in > /sys/class/gpio/gpio31/direction
+	echo out > /sys/class/gpio/gpio31/direction
+3.1 If an output pin, set the level to low or high
+	echo 0 > /sys/class/gpio/gpio31/value
+	echo 1 > /sys/class/gpio/gpio31/value
+3.2 If an input pin, read the pin 's level
+	cat /sys/class/gpio/gpio31/value
+4. When done, unexport the pin
+	echo 31 > /sys/class/gpio/unexport

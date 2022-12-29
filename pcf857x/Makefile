@@ -1,0 +1,2 @@
+EXTRA_CFLAGS = -Wall
+obj-$(CONFIG_PCF8574) +=pcf857x.o

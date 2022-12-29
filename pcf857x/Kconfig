@@ -1,0 +1,8 @@
+menu "pcf8574x kernel modules"
+config PCF8574
+	bool "PCF8574"
+	depends on ARM
+	default y if ARM
+	help
+		Select this option to run a pcf8574x module!
+endmenu
